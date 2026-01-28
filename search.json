@@ -11,6 +11,6 @@
     "href": "index.html",
     "title": "Quarto Index",
     "section": "",
-    "text": "#| label: fig-pie-exploded #| fig-cap: “A pie chart with exploded slices”\nimport matplotlib.pyplot as plt\nlabels = [‘Apples’, ‘Bananas’, ‘Cherries’, ‘Dates’] sizes = [30, 25, 20, 25] explode = (0.1, 0.1, 0.1, 0.1)\nfig, ax = plt.subplots() ax.pie( sizes, labels=labels, explode=explode, autopct=‘%1.1f%%’, startangle=90, shadow=True ) ax.axis(‘equal’) plt.show()"
+    "text": "import matplotlib.pyplot as plt\n\nlabels = ['Apples', 'Bananas', 'Cherries', 'Dates']\nsizes = [30, 25, 20, 25]\nexplode = (0.1, 0.1, 0.1, 0.1)\n\nfig, ax = plt.subplots()\nax.pie(\n    sizes,\n    labels=labels,\n    explode=explode,\n    autopct='%1.1f%%',\n    startangle=90,\n    shadow=True\n)\nax.axis('equal')\nplt.show()\n\n\n\n\n\n\n\nFigure 1: A pie chart with exploded slices"
   }
 ]
