@@ -11,6 +11,6 @@
     "href": "index.html",
     "title": "Quarto Index",
     "section": "",
-    "text": "#| label: fig-pie-exploded #| fig-cap: “A pie chart with exploded slices”\nimport matplotlib.pyplot as plt\nlabels = [‘Apples’, ‘Bananas’, ‘Cherries’, ‘Dates’] sizes = [30, 25, 20, 25]\n\nAmount to offset each slice\nexplode = (0.1, 0.1, 0.1, 0.1)\nfig, ax = plt.subplots() ax.pie( sizes, labels=labels, explode=explode, autopct=‘%1.1f%%’, startangle=90, shadow=True ) ax.axis(‘equal’) # Keep it circular\nplt.show()"
+    "text": "#| label: fig-pie-exploded #| fig-cap: “A pie chart with exploded slices”\nimport matplotlib.pyplot as plt\nlabels = [‘Apples’, ‘Bananas’, ‘Cherries’, ‘Dates’] sizes = [30, 25, 20, 25] explode = (0.1, 0.1, 0.1, 0.1)\nfig, ax = plt.subplots() ax.pie( sizes, labels=labels, explode=explode, autopct=‘%1.1f%%’, startangle=90, shadow=True ) ax.axis(‘equal’) plt.show()"
   }
 ]

@@ -108,14 +108,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#amount-to-offset-each-slice" id="toc-amount-to-offset-each-slice" class="nav-link active" data-scroll-target="#amount-to-offset-each-slice">Amount to offset each slice</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -141,15 +135,10 @@ ul.task-list li input[type="checkbox"] {
 
 <p>#| label: fig-pie-exploded #| fig-cap: “A pie chart with exploded slices”</p>
 <p>import matplotlib.pyplot as plt</p>
-<p>labels = [‘Apples’, ‘Bananas’, ‘Cherries’, ‘Dates’] sizes = [30, 25, 20, 25]</p>
-<section id="amount-to-offset-each-slice" class="level1">
-<h1>Amount to offset each slice</h1>
-<p>explode = (0.1, 0.1, 0.1, 0.1)</p>
-<p>fig, ax = plt.subplots() ax.pie( sizes, labels=labels, explode=explode, autopct=‘%1.1f%%’, startangle=90, shadow=True ) ax.axis(‘equal’) # Keep it circular</p>
-<p>plt.show()</p>
+<p>labels = [‘Apples’, ‘Bananas’, ‘Cherries’, ‘Dates’] sizes = [30, 25, 20, 25] explode = (0.1, 0.1, 0.1, 0.1)</p>
+<p>fig, ax = plt.subplots() ax.pie( sizes, labels=labels, explode=explode, autopct=‘%1.1f%%’, startangle=90, shadow=True ) ax.axis(‘equal’) plt.show()</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
