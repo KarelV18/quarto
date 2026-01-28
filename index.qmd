@@ -1,14 +1,8 @@
 ---
 title: "Quarto Index"
-project:
-  type: website
-  output-dir: docs
-format:
-  html:
-    code-fold: true
-
 ---
 
+```{python}
 #| label: fig-pie-exploded
 #| fig-cap: "A pie chart with exploded slices"
 
@@ -16,8 +10,6 @@ import matplotlib.pyplot as plt
 
 labels = ['Apples', 'Bananas', 'Cherries', 'Dates']
 sizes = [30, 25, 20, 25]
-
-# Amount to offset each slice
 explode = (0.1, 0.1, 0.1, 0.1)
 
 fig, ax = plt.subplots()
@@ -29,6 +21,5 @@ ax.pie(
     startangle=90,
     shadow=True
 )
-ax.axis('equal')  # Keep it circular
-
+ax.axis('equal')
 plt.show()
