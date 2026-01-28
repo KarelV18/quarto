@@ -6,6 +6,29 @@ project:
 format:
   html:
     code-fold: true
-execute:
-  python: "C:\\Users\\User\\Desktop\\quarto\\env\\Scripts\\pip3.10.exe"
+
 ---
+
+#| label: fig-pie-exploded
+#| fig-cap: "A pie chart with exploded slices"
+
+import matplotlib.pyplot as plt
+
+labels = ['Apples', 'Bananas', 'Cherries', 'Dates']
+sizes = [30, 25, 20, 25]
+
+# Amount to offset each slice
+explode = (0.1, 0.1, 0.1, 0.1)
+
+fig, ax = plt.subplots()
+ax.pie(
+    sizes,
+    labels=labels,
+    explode=explode,
+    autopct='%1.1f%%',
+    startangle=90,
+    shadow=True
+)
+ax.axis('equal')  # Keep it circular
+
+plt.show()
